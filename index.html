@@ -3,122 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EstiloPortafolio.css">
-    <link rel="icon" href="IconoPortafolio.png" type="image/x-icon">
-    <title>Portafolio Web 💼</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="img/portfolio-icon.png">
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1 id="desplazable">Portafolio Web: Salvador Vanoli 💼🎮💻</h1>
-    <br>
-    <br>
-    <br>
-    <p id="descripcion">Apasionado del desarrollo y entusiasta de las nuevas tecnologías.</p>
+<div id="background">
+    <div id="instr" class="transition">
+        <p>
+            Push the letters to discover
+        </p>
+    </div>
 
-    <hr>
+    <div id="instrfunc" class="hide transition">
+        <p>
+            Press here to go back
+        </p>
+    </div>
 
-    <ul class="unli">
-        <li>
-            <a href="#hyc">Habilidades y conocimientos</a>
-        </li>
-        <li>
-            <a href="#edu">Educacion</a>
-        </li>
-        <li>
-            <a href="#pso">Perfiles Sociales</a>
-        </li>
-        <li>
-            <a href="#cont">Contactar</a>
-        </li>
-    </ul>
+    <div id="littledesc" class="transition">
+        <p>
+            Junior Web Developer
+        </p>
+    </div>
 
-    <hr>
+    <div id="title">
+        <h1>
+            &nbsp;
+            <span id="name" class="transition">
+                <span id="NStudies">
+                    S
+                </span>
 
-    <h2 id="hyc">Habilidades y conocimientos 📐</h2>
-    <ul>
-        <li>
-        <b>Inglés:</b> título B2 certificación de Cambridge
-        </li>
-        <li>
-        <b>Lenguajes de programación:</b> C++, html, CSS, JavaScript, Ruby.
-        </li>
-        <li>
-        <b>Trabajo en equipo:</b> capaz de escuchar y aportar ideas para favorecer y enriquecer el trabajo en equipo.
-        </li>
-        <li>
-        <b>Aprendiz voluntario:</b> siempre dispuesto al estudio. En constante actualización respecto a las nuevas tecnologías.
-        </li>
-        <li>
-        <b>Resolución de problemas:</b> capaz de formar soluciones efectivas a problemas informáticos.
-        </li>
-        <li>
-        <b>Manejo de aplicaciones ofimáticas:</b> Word, Excel, Powerpoint, entre otras.
-        </li>
-    </ul>
+                    a
 
-    <hr>
+                <span id="NLanguages">
+                    l
+                </span>
 
-    <h2 id="edu">Educación 🎓</h2>
+                    v
 
-    <table>
-        <thead>
+                    a
+
+                    d
+
+                    o
+
+                <span id="NwoRk">
+                    r
+                </span>
+                
+            </span>
+
+            <br>
+
+            <span id="lastname" class="transition">
+                    V
+
+                <span id="LhAbilities">
+                    a
+                </span>
+
+                    n
+
+                <span id="LprOjects">
+                    o
+                </span>
+
+                    l
+
+                    i
+           </span>
+        </h1>        
+    </div>
+
+    <div id="studiestitle" class="hide transition">
+        <h2>
+            Studies
+        </h2>
+    </div>
+
+    <div id="studies" class="hide transition">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Entity</th>
+                    <th>Promoted</th>
+                </tr>
+                
+            </thead>
+    
             <tr>
-                <th></th>
-                <th>Título</th>
-                <th>Entidad</th>
-                <th>Promoción</th>
+                <td class="img"><img src="img/jap-icon.png" id="planceibal"></td>
+                <td>Web Design</td>
+                <td>Plan Ceibal (Jóvenes a programar)</td>
+                <td>Studying</td>
             </tr>
-            
-        </thead>
+            <tr>
+                <td class="img"><img src="img/utec-icon.png" id="utec"></td>        
+                <td>Information Technologist</td>
+                <td>UTEC</td>
+                <td>Studying</td>
+            </tr>
+            <tr>
+                <td class="img"><img src="img/cambridge-icon.png" id="cambridge"></td>
+                <td>Cambridge English B2 First</td>
+                <td>Cambridge English</td>
+                <td>2022</td>
+            </tr>
+        </table>
+    </div>
 
-        <tr>
-            <td><img src="https://pbs.twimg.com/media/DW98GwsWkAAy68h.png" id="planceibal"></td>
-            <td>Desarrollo Web</td>
-            <td>Plan Ceibal (Jóvenes a programar)</td>
-            <td class="estudiando">Estudiando</td>
-        </tr>
-        <tr>
-            <td><img src="https://www.uruguayemprendedor.uy/uploads/institucion/resize_Logo%20original%20PNG%20Fondo%20Transp1-5.png.png" id="utec"></td>        
-            <td>Tecnólogo en informática</td>
-            <td>UTEC</td>
-            <td class="estudiando">Estudiando</td>
-        </tr>
-        <tr>
-            <td><img src="https://www.cambridgeenglish.org/es/Images/CE_Master_Logo_RGB.png" id="cambridge"></td>
-            <td>Titulación B2 de inglés</td>
-            <td>Cambridge English</td>
-            <td>2022</td>
-        </tr>
-    </table>
+    <div id="languagestitle" class="hide transition">
+        <h2>
+            Languages
+        </h2>
+    </div>
 
-    <br>
-    <hr>
+    <div id="languages" class="hide transition">
+        <p>
+            Spanish: NATIVE
+            <div class="progressbarback">
+            <div id="progressbarspanish"></div>
+            </div>
 
-    <h2 id="pso">Perfiles sociales 📱</h2>
-    <p>También puedes encontrarme en:</p>
-    <ul class="unli">
-        <li><a href="#">Salvador Vanoli</a></li>
-        <li><a href="https://github.com/">Github</a></li>
-        <li><a href="https://twitter.com/">Twitter</a></li>
-        <li><a href="https://uy.linkedin.com/">LinkedIn</a></li>
-    </ul>
+            <br>
 
-    <hr>
+            English: High Intermediate (B2)
+            <div class="progressbarback">
+            <div id="progressbarenglish"></div>
+            </div>
 
-    <h2 id="cont">Contactar 📞</h2>
-    <form>
-        <p  class="contactar izq" id="de">De: <input type="text" class="insertar" name="de" placeholder="Inserte nombre / empresa" required></p>
-        <p  class="contactar izq">Temática: 
-            <select name="Tematica" id="tematica" required>
-                <option value="--Elige un Tema--" selected disabled>--- Elige un Tema ---</option>
-                <option value="Consulta">Consulta</option>
-                <option value="Propuesta">Propuesta</option>
-                <option value="Reporte">Reporte</option>
-                <option value="Otro">Otro</option>
-        </select>
-        <p  class="contactar izq">Asunto: <input type="text" class="insertar" name="Asunto" required></p>
-        <p  class="contactar izq">Cuerpo: <textarea name="cuerpo" id="cuerpo" rows="1" cols="20"></textarea></p>
-        <p><button id="enviar" type="submit">Enviar</button></p>
-    </form>
+            <br>
 
+            Portuguese: Basic (No certification)
+            <div class="progressbarback">
+            <div id="progressbarportuguese"></div>
+            </div>
+        </p>
+    </div>
+
+    <div id="habilitiestitle" class="hide transition">
+        <h2>
+            Habilities
+        </h2>
+    </div>
+
+    <div id="habilities" class="hide transition">
+        <ul>
+            <li>
+                <b>English:</b> Cambridge B2 Certification Title
+            </li>
+            <li>
+                <b>Programming Languages:</b> C++, HTML, CSS, JavaScript, Ruby.
+            </li>
+            <li>
+                <b>Teamwork:</b> Capable of listening and contributing ideas to enrich teamwork.
+            </li>
+            <li>
+                <b>Volunteer Learner:</b> Always eager to study. Constantly learning about new technologies.
+            </li>
+            <li>
+                <b>Problem Solving:</b> Able to formulate effective solutions to computer problems.
+            </li>
+            <li>
+                <b>Office Application Proficiency:</b> Word, Excel, PowerPoint, among others.
+            </li>
+        </ul>
+    </div>
+
+    <div id="work">
+
+    </div>
+
+    <div id="projects">
+
+    </div>
+
+    <div id="socialmedia">
+        <a href="#"><img src="img/facebook-logo.png" alt="facebook-logo"></a>
+        <a href="#"><img src="img/instagram-logo.png" alt="instagram-logo"></a>
+        <a href="#"><img src="img/linkedin-logo.png" alt="linkedin-logo"></a>
+        <a href="#"><img src="img/twitter-logo.png" alt="twitter-logo"></a>
+        <a href="#"><img src="img/github-logo.png" alt="github-logo"></a>
+    </div>
+
+</div>    
 </body>
 </html>

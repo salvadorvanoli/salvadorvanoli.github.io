@@ -34,7 +34,7 @@ body::before{
     font-size: 1vw;
     color: red;
     font-weight: 800;
-    text-shadow: 1px 1px blue;
+    text-shadow: 0.2vh 0.2vh blue;
 }
 
 #instr{
@@ -190,7 +190,7 @@ body::before{
     text-align: center;
 }
 
-#progressbarspanish {
+#progressbarenglish {
     width: 80vh;
     height: 2vh;
     background-color: red;
@@ -200,7 +200,7 @@ body::before{
     height: 100%;
 }
 
-#progressbarenglish {
+#progressbarspanish {
     width: 80vh;
     height: 2vh;
     background-color: red;

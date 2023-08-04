@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Lógica de funcionamiento de la S = studies.
     
+    let studiesbool = false;
+    let languagesbool = false;
+    let habilitiesbool = false;
     let instr = document.getElementById("instr");
     let instrfunc = document.getElementById("instrfunc");
     let NStudies = document.getElementById("NStudies");
@@ -23,18 +26,24 @@ document.addEventListener("DOMContentLoaded", function() {
         languagesbox.classList.add("hide");
         habilitiestitle.classList.add("hide");
         habilitiesbox.classList.add("hide");
+        studiesbool = false;
+        languagesbool = false;
+        habilitiesbool = false;
     }
     
     instrfunc.addEventListener("click", goback);
 
     function studies(){
-        instr.classList.add("hide");
-        instrfunc.classList.remove("hide");
-        name.classList.add("hide");
-        lastname.classList.add("hide");
-        studiesbox.classList.remove("hide");
-        littledesc.classList.add("hide");
-        studiesTitle.classList.remove("hide");
+        if(!habilitiesbool && !languagesbool){
+            studiesbool = true;
+            instr.classList.add("hide");
+            instrfunc.classList.remove("hide");
+            name.classList.add("hide");
+            lastname.classList.add("hide");
+            studiesbox.classList.remove("hide");
+            littledesc.classList.add("hide");
+            studiesTitle.classList.remove("hide");
+        }
     }
 
     function pressS(){
@@ -58,13 +67,16 @@ document.addEventListener("DOMContentLoaded", function() {
     let languagesbox = document.getElementById("languages");
 
     function languages(){
-        instr.classList.add("hide");
-        instrfunc.classList.remove("hide");
-        name.classList.add("hide");
-        lastname.classList.add("hide");
-        littledesc.classList.add("hide");
-        languagestitle.classList.remove("hide");
-        languagesbox.classList.remove("hide");
+        if(!habilitiesbool && !studiesbool){
+            languagesbool = true;
+            instr.classList.add("hide");
+            instrfunc.classList.remove("hide");
+            name.classList.add("hide");
+            lastname.classList.add("hide");
+            littledesc.classList.add("hide");
+            languagestitle.classList.remove("hide");
+            languagesbox.classList.remove("hide");
+        }
     }
 
     function pressL(){
@@ -92,13 +104,16 @@ document.addEventListener("DOMContentLoaded", function() {
     let habilitiesbox = document.getElementById("habilities");
 
     function habilities(){
-        instr.classList.add("hide");
-        instrfunc.classList.remove("hide");
-        name.classList.add("hide");
-        lastname.classList.add("hide");
-        littledesc.classList.add("hide");
-        habilitiestitle.classList.remove("hide");
-        habilitiesbox.classList.remove("hide");
+        if(!languagesbool && !studiesbool){
+            habilitiesbool = true;
+            instr.classList.add("hide");
+            instrfunc.classList.remove("hide");
+            name.classList.add("hide");
+            lastname.classList.add("hide");
+            littledesc.classList.add("hide");
+            habilitiestitle.classList.remove("hide");
+            habilitiesbox.classList.remove("hide");
+        }
     }
 
     function pressA(){

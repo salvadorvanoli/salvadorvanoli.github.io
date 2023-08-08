@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let studiesbool = false;
     let languagesbool = false;
-    let habilitiesbool = false;
+    let abilitiesbool = false;
     let instr = document.getElementById("instr");
     let instrfunc = document.getElementById("instrfunc");
     let NStudies = document.getElementById("NStudies");
@@ -24,17 +24,17 @@ document.addEventListener("DOMContentLoaded", function() {
         studiesTitle.classList.add("hide");
         languagestitle.classList.add("hide");
         languagesbox.classList.add("hide");
-        habilitiestitle.classList.add("hide");
-        habilitiesbox.classList.add("hide");
+        abilitiestitle.classList.add("hide");
+        abilitiesbox.classList.add("hide");
         studiesbool = false;
         languagesbool = false;
-        habilitiesbool = false;
+        abilitiesbool = false;
     }
     
     instrfunc.addEventListener("click", goback);
 
     function studies(){
-        if(!habilitiesbool && !languagesbool){
+        if(!abilitiesbool && !languagesbool){
             studiesbool = true;
             instr.classList.add("hide");
             instrfunc.classList.remove("hide");
@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function pressS(){
-        NStudies.style.textShadow = "0.5vh 0.5vh yellow";
-        NStudies.style.color = "orange";
+        NStudies.style.textShadow = "0.5vh 0.5vh #FAA780";
+        NStudies.style.color = "#DB5741";
     }
 
     function nopressS(){
-        NStudies.style.textShadow = "0.5vh 0.5vh lightyellow";
-        NStudies.style.color = "red";
+        NStudies.style.textShadow = "0.5vh 0.5vh #FAC9B8";
+        NStudies.style.color = "#DB8A74";
     }
 
     NStudies.addEventListener("mousedown", pressS);
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let languagesbox = document.getElementById("languages");
 
     function languages(){
-        if(!habilitiesbool && !studiesbool){
+        if(!abilitiesbool && !studiesbool){
             languagesbool = true;
             instr.classList.add("hide");
             instrfunc.classList.remove("hide");
@@ -80,13 +80,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function pressL(){
-        NLanguages.style.textShadow = "0.5vh 0.5vh blueviolet";
-        NLanguages.style.color = "skyblue";
+        NLanguages.style.textShadow = "0.5vh 0.5vh #87C784";
+        NLanguages.style.color = "#5DAC59";
     }
 
     function nopressL(){
-        NLanguages.style.textShadow = "0.5vh 0.5vh magenta";
-        NLanguages.style.color = "blue";
+        NLanguages.style.textShadow = "0.5vh 0.5vh #BFFFBC";
+        NLanguages.style.color = "#77C973";
     }
 
     NLanguages.addEventListener("mousedown", pressL);
@@ -99,35 +99,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Lógica de funcionamiento de la A = habilities.
 
-    let LhAbilities = document.getElementById("LhAbilities");
-    let habilitiestitle = document.getElementById("habilitiestitle");
-    let habilitiesbox = document.getElementById("habilities");
+    let LAbilities = document.getElementById("LAbilities");
+    let abilitiestitle = document.getElementById("abilitiestitle");
+    let abilitiesbox = document.getElementById("abilities");
 
     function habilities(){
         if(!languagesbool && !studiesbool){
-            habilitiesbool = true;
+            abilitiesbool = true;
             instr.classList.add("hide");
             instrfunc.classList.remove("hide");
             name.classList.add("hide");
             lastname.classList.add("hide");
             littledesc.classList.add("hide");
-            habilitiestitle.classList.remove("hide");
-            habilitiesbox.classList.remove("hide");
+            abilitiestitle.classList.remove("hide");
+            abilitiesbox.classList.remove("hide");
         }
     }
 
     function pressA(){
-        LhAbilities.style.textShadow = "0.5vh 0.5vh darkyellow";
-        LhAbilities.style.color = "darkorange";
+        LAbilities.style.textShadow = "0.5vh 0.5vh #7D88AC";
+        LAbilities.style.color = "#3A3667";
     }
 
     function nopressA(){
-        LhAbilities.style.textShadow = "0.5vh 0.5vh yellow";
-        LhAbilities.style.color = "orange";
+        LAbilities.style.textShadow = "0.5vh 0.5vh #A8AEC1";
+        LAbilities.style.color = "#55527B";
     }
 
-    LhAbilities.addEventListener("mousedown", pressA);
-    LhAbilities.addEventListener("mouseup", nopressA);
-    LhAbilities.addEventListener("click", habilities);
+    LAbilities.addEventListener("mousedown", pressA);
+    LAbilities.addEventListener("mouseup", nopressA);
+    LAbilities.addEventListener("click", habilities);
 
 });

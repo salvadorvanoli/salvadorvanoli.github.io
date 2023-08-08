@@ -81,14 +81,14 @@ body::before{
 
 #NLanguages{
     cursor: pointer;
-    color: blue;
-    text-shadow: 0.5vh 0.5vh magenta;
+    color: #77C973;
+    text-shadow: 0.5vh 0.5vh #BFFFBC;
 }
 
-#LhAbilities{
+#LAbilities{
     cursor: pointer;
-    color: orange;
-    text-shadow: 0.5vh 0.5vh yellow; 
+    color: #55527B;
+    text-shadow: 0.5vh 0.5vh #A8AEC1; 
 }
 
 #studies{
@@ -111,7 +111,7 @@ body::before{
     border-radius: 1vw;
 }
 
-#habilities{
+#abilities{
     position: absolute;
     right: 55vh;
     bottom: 40vh; 
@@ -126,10 +126,10 @@ body::before{
     left: 35vw;
     top: 0.5vh;
     bottom: 70vh;
-    color: red;
+    color: #DB8A74;
     font-size: 7vw;
     letter-spacing: 0.5vh;
-    text-shadow: 0.5vh 0.5vh lightyellow;
+    text-shadow: 0.5vh 0.5vh #FAC9B8;
 }
 
 #languagestitle h2{
@@ -137,21 +137,21 @@ body::before{
     left: 35vw;
     top: 0.5vh;
     bottom: 70vh;
-    color: blue;
+    color: #77C973;
     font-size: 7vw;
     letter-spacing: 0.5vh;
-    text-shadow: 0.5vh 0.5vh magenta;
+    text-shadow: 0.5vh 0.5vh #BFFFBC;
 }
 
-#habilitiestitle h2{
+#abilitiestitle h2{
     position: absolute;
     left: 35vw;
     top: 0.5vh;
     bottom: 70vh;
-    color: orange;
+    color: #55527B;
     font-size: 7vw;
     letter-spacing: 0.5vh;
-    text-shadow: 0.5vh 0.5vh yellow;
+    text-shadow: 0.5vh 0.5vh #A8AEC1;
 }
 
 #socialmedia{

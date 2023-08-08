@@ -1,7 +1,7 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1vw;
-    background-color: rgb(26, 186, 218);
+    background-color: #031926;
     overflow-x: hidden;
 }
 
@@ -22,7 +22,7 @@ body::before{
     height: 0;
     border-style: solid;
     border-width: 0 0 50vh 50vw; /* Ajusta el tamaño del triángulo con la altura en '50vh' */
-    border-color: transparent transparent blue transparent; /* Color del triángulo */
+    border-color: transparent transparent #468189 transparent; /* Color del triángulo */
     z-index: -1;
 }
 
@@ -32,7 +32,7 @@ body::before{
     top: 30vh;
     left: 60vw;
     font-size: 1vw;
-    color: red;
+    color: #9DBEBB;
     font-weight: 800;
     text-shadow: 0.2vh 0.2vh blue;
 }
@@ -43,9 +43,9 @@ body::before{
     position: absolute;
     top: 2vh;
     left: 2vw;
-    color: white;
+    color: #F4E9CD;
     font-weight: 1000;
-    text-shadow: 3px 3px blueviolet;
+    text-shadow: 0.25vh 0.25vh #77ACA2;
 }
 
 #instrfunc{
@@ -55,16 +55,16 @@ body::before{
     position: absolute;
     top: 2vh;
     left: 2vw;
-    color: white;
+    color: #F4E9CD;
     font-weight: 1000;
-    text-shadow: 3px 3px blueviolet;
+    text-shadow: 3px 3px #77ACA2;
 }
 
 #title h1{
     user-select: none;
-    color: white;
+    color: #F4E9CD;
     font-size: 7vw;
-    text-shadow: 0.5vh 0.5vh blueviolet;
+    text-shadow: 0.5vh 0.5vh #77ACA2;
     position: absolute;
     top: 20vh;
     left: 20vw;
@@ -74,9 +74,9 @@ body::before{
 
 #NStudies{
     cursor: pointer;
-    color: red;
+    color: #DB8A74;
     font-size: 10vw;
-    text-shadow: 0.5vh 0.5vh lightyellow;
+    text-shadow: 0.5vh 0.5vh #FAC9B8;
 }
 
 #NLanguages{

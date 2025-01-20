@@ -1,4 +1,4 @@
-# Portfolio personal.
+# WIP Portfolio personal WIP
 
 CV Virtual, con información sobre mis estudios y mis capacitaciones.
 
